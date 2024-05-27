@@ -24,7 +24,7 @@ Para executar este projeto localmente, siga estas etapas:
 3. Execute a aplicação: `python app.py`
 4. Acesse a API em http://localhost:5000 para fazer as classificações
 
-## ENTENDIMENTO DO PROJETO E TESTES REALIZADOS
+## Entendimento do projeto e testes realizados
 
 O projeto apresenta várias categorias para classificação:
 
@@ -41,7 +41,7 @@ comida         414
 
 Sendo possível observar um desbalanceamento das categorias, contudo em testes de modelagem optamos por não inserir dados, apenas testar na modelagem se a definição class_weight faria uma diferença na resposta do modelo e não teve um aumento de resposta de acurácia, sendo inclusive observado uma redução de 1% na acurácia.
 
-## PRÉ PROCESSAMENTO
+## Pré processamento
 
 Para o cada etapa do pré-processamento, foi realizado:
 
