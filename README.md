@@ -4,7 +4,8 @@ Este é um projeto  inclui várias etapas, desde a análise exploratória até a
 
 ## Objetivo
 
-O objetivo deste projeto é explorar um conjunto de dados, criar modelos de CLASSIFICAÇÃO com machine learning e disponibilizar uma API para interação em tempo real com os modelos.
+O objetivo deste projeto é explorar um conjunto de dados, criar modelos de CLASSIFICAÇÃO com machine learning e disponibilizar uma API para interação com o modelo.
+Este projeto visa classificar notícias em diferentes categorias usando técnicas de Processamento de Linguagem Natural (PLN) e aprendizado de máquina. O modelo principal utilizado é a Regressão Logística, que foi treinado e avaliado em um conjunto de dados de notícias pré-processadas.
 
 ## Estrutura do Projeto
 
@@ -40,6 +41,8 @@ comida         414
 
 Sendo possível observar um desbalanceamento das categorias, contudo em testes de modelagem optamos por não inserir dados, apenas testar na modelagem se a definição class_weight faria uma diferença na resposta do modelo e não teve um aumento de resposta de acurácia, sendo inclusive observado uma redução de 1% na acurácia.
 
+## PRÉ PROCESSAMENTO
+
 Para o cada etapa do pré-processamento, foi realizado:
 
 Lowercasing e remoção de pontuação: Todas as letras do texto foram convertidas para minúsculas para garantir consistência e facilitar a comparação. Em seguida, a pontuação foi removida para simplificar o texto e focar apenas nas palavras.
@@ -53,3 +56,15 @@ Lemmatization: As palavras foram lematizadas para reduzi-las à sua forma base (
 Normalização de acentos: Os acentos foram normalizados para garantir consistência e uniformidade no texto.
 
 Combinação de tokens pré-processados: Os tokens pré-processados foram combinados novamente em uma única string para representar o texto final, pronto para análise e modelagem.
+
+Além das etapas padrão, foi essencial analisar a frequência das palavras por categoria e realizar a remoção de palavras que não foram consideradas essenciais, aumento a acurácia da modelagem de 0.92 para 0.94.
+
+##Treinamento e Avaliação do Modelo
+
+Utilizamos a Regressão Logística com TF-IDF Vectorizer. O modelo é ajustado utilizando GridSearchCV para encontrar os melhores hiperparâmetros. O pipeline completo inclui etapas de transformação e modelagem.
+
+## Resultados
+O modelo treinado foi avaliado no conjunto de teste, gerando um relatório de classificação que inclui precisão, revocação, F1-score e acurácia. O desempenho geral do modelo foi satisfatório, com uma acurácia de aproximadamente 92%.
+
+## Contribuições
+Contribuições são bem-vindas! Se você deseja contribuir com este projeto, por favor, abra uma issue ou envie um pull request.
