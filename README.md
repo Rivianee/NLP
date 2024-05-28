@@ -56,7 +56,7 @@ Além das etapas padrão, foi essencial analisar a frequência das palavras por 
 Utilizamos a Regressão Logística com TF-IDF Vectorizer. O modelo é ajustado utilizando GridSearchCV para encontrar os melhores hiperparâmetros. O pipeline completo inclui etapas de transformação e modelagem.
 
 ## Resultados
-O modelo treinado foi avaliado no conjunto de teste, gerando um relatório de classificação que inclui precisão, revocação, F1-score e acurácia. O desempenho geral do modelo foi satisfatório, com uma acurácia de aproximadamente 92%.
+O modelo treinado foi avaliado no conjunto de teste, gerando um relatório de classificação que inclui precisão, revocação, F1-score e acurácia. O desempenho geral do modelo foi satisfatório, com uma acurácia de aproximadamente 94%, e selecionando as variáveis balanceadas a acurácia ficou em 97%.
 
 ## Contribuições
 Contribuições são bem-vindas! Se você deseja contribuir com este projeto, por favor, abra uma issue ou envie um pull request.
