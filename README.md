@@ -12,8 +12,8 @@ Este projeto visa classificar notícias em diferentes categorias usando técnica
 O projeto está organizado da seguinte forma:
 
 - `analise_exploratoria.ipynb`: Notebook contendo a análise exploratória dos dados e o pré- processamento dos dados.
-- `treinamento_modelo.ipynb`: Notebook com o treinamento dos modelos de machine learning e o script Python contendo a implementação da API Flask.
-- `requirements.txt`: Arquivo de requisitos Python para instalação das dependências.
+- `treinamento_modelo.ipynb`: Notebook com o treinamento dos modelos de machine learning (foram realizados testes com o BERT, REGRESSÃO LOGÍSTICA e RANDOM FOREST, sendo observado melhor resultado inicial com o modelo de regressão logística
+- `servidor_flask.py`: api desenvolvida 
 
 ## Configuração
 
