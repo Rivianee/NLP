@@ -15,14 +15,6 @@ O projeto está organizado da seguinte forma:
 - `treinamento_modelo.ipynb`: Notebook com o treinamento dos modelos de machine learning (foram realizados testes com o BERT, REGRESSÃO LOGÍSTICA e RANDOM FOREST, sendo observado melhor resultado inicial com o modelo de regressão logística
 - `servidor_flask.py`: api desenvolvida 
 
-## Configuração
-
-Para executar este projeto localmente, siga estas etapas:
-
-1. Clone este repositório: `git clone https://github.com/seu-usuario/projeto.git`
-2. Instale as dependências: `pip install -r requirements.txt`
-3. Execute a aplicação: `python app.py`
-4. Acesse a API em http://localhost:5000 para fazer as classificações
 
 ## Entendimento do projeto e testes realizados
 
